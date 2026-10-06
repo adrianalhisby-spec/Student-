@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B3D2E" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <title>Kontak | ITS NU Sriwijaya</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar scrolled">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo"><div class="nav-logo-icon">ITS</div><span>ITS NU Sriwijaya</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="kehidupan-mahasiswa.html">Kehidupan Mahasiswa</a></li>
+        <li><a href="program-studi.html">Program Studi</a></li>
+        <li><a href="kontak.html" class="active">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle"></button>
+        <a href="pmb.html" class="btn-cta">PMB 2026</a>
+        <button class="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div style="display:flex;justify-content:space-between;margin-bottom:2rem;"><strong>Menu</strong><button class="close-menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;">×</button></div>
+    <a href="index.html">Beranda</a><a href="kehidupan-mahasiswa.html">Kehidupan Mahasiswa</a><a href="program-studi.html">Program Studi</a><a href="pmb.html">PMB</a><a href="kontak.html">Kontak</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="breadcrumb"><a href="index.html">Beranda</a> / <span>Kontak</span></div>
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap membantu calon mahasiswa, orang tua, dan mitra yang ingin mengenal lebih dekat ITS NU Sriwijaya.</p>
+  </section>
+
+  <section class="section">
+    <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <h3 style="margin-bottom:1.5rem;">Informasi Kontak</h3>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <strong>Alamat</strong>
+            <p style="color:var(--text-muted);font-size:0.95rem;">Jl. Talang Kerangga No.411, Kel. 30 Ilir, Kec. Ilir Barat II, Kota Palembang, Sumatera Selatan 30129</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div>
+            <strong>Telepon</strong>
+            <p style="color:var(--text-muted);">+62 813-1211-1599</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p style="color:var(--text-muted);">info@itsnusriwijaya.ac.id<br>itsnusumateraselatan@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">🕐</div>
+          <div>
+            <strong>Jam Pelayanan</strong>
+            <p style="color:var(--text-muted);">Senin – Sabtu<br>08.00 – 17.00 WIB</p>
+          </div>
+        </div>
+        <div style="margin-top:1.5rem;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.5!2d104.7!3d-2.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwNTknMjQuMCJTIDEwNMKwNDInMDAuMCJF!5e0!3m2!1sid!2sid!4v1"
+            width="100%" height="200" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Peta lokasi ITS NU Sriwijaya">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="contact-form reveal">
+        <h3 style="margin-bottom:1.5rem;">Kirim Pesan</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="nama@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <select id="subject" name="subject">
+              <option value="pmb">Informasi PMB</option>
+              <option value="prodi">Program Studi</option>
+              <option value="kampus">Kehidupan Kampus</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-bottom" style="border:none;padding-top:2rem;">
+      <span>© 2026 ITS NU Sriwijaya Sumsel</span>
+      <span><a href="index.html" style="color:var(--gold);">Beranda</a></span>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

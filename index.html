@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Kehidupan Mahasiswa ITS NU Sriwijaya - Portal resmi student life Institut Teknologi dan Sains Nahdlatul Ulama Sriwijaya Sumatera Selatan. Hidup, belajar, dan berkembang dengan nilai Islami & teknologi." />
+  <meta name="keywords" content="ITS NU Sriwijaya, kehidupan mahasiswa, student life, Palembang, NU, teknologi, sains" />
+  <meta name="author" content="ITS NU Sriwijaya" />
+  <title>Kehidupan Mahasiswa | ITS NU Sriwijaya Sumsel</title>
+
+  <!-- PWA / Android App -->
+  <meta name="theme-color" content="#0B3D2E" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="ITS NU Life" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="overflow: hidden;">
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-logo">ITS</div>
+    <div class="loader-text">ITS NU Sriwijaya</div>
+    <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Beranda ITS NU Sriwijaya">
+        <div class="nav-logo-icon">ITS</div>
+        <span>ITS NU Sriwijaya</span>
+      </a>
+      
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="kehidupan-mahasiswa.html">Kehidupan Mahasiswa</a></li>
+        <li><a href="program-studi.html">Program Studi</a></li>
+        <li><a href="prestasi.html">Prestasi</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="berita.html">Berita</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Toggle dark/light mode" title="Tema"></button>
+        <button class="lang-toggle" data-lang="id" aria-label="Switch language" title="Bahasa">EN</button>
+        <a href="pmb.html" class="btn-cta">PMB 2026</a>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2rem;">
+      <strong style="font-size:1.1rem;">Menu</strong>
+      <button class="close-menu" style="background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text);" aria-label="Close menu">×</button>
+    </div>
+    <a href="index.html">Beranda</a>
+    <a href="kehidupan-mahasiswa.html">Kehidupan Mahasiswa</a>
+    <a href="program-studi.html">Program Studi</a>
+    <a href="prestasi.html">Prestasi & Kegiatan</a>
+    <a href="testimoni.html">Testimoni</a>
+    <a href="galeri.html">Galeri</a>
+    <a href="berita.html">Berita & Blog</a>
+    <a href="pmb.html">PMB 2026</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="kontak.html">Kontak</a>
+    <div style="margin-top:2rem;display:flex;gap:0.75rem;">
+      <button class="theme-toggle" aria-label="Toggle theme" style="width:100%;justify-content:center;padding:0.75rem;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);"></button>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-particles"></div>
+      <div class="hero-grid"></div>
+      <div class="floating-shape"></div>
+      <div class="floating-shape"></div>
+      <div class="floating-shape"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">
+          <span>🕌</span> Student Life Portal Resmi
+        </div>
+        <h1 class="hero-title">
+          <span class="typing-text">Hidup, Belajar, dan Berkembang</span><br />
+          di <span class="highlight">ITS NU Sriwijaya</span>
+        </h1>
+        <p class="hero-subtitle">
+          Temukan pengalaman mahasiswa yang penuh semangat, nilai Islami, inovasi teknologi, dan kebersamaan di kampus Nahdlatul Ulama di jantung Kota Palembang.
+        </p>
+        <div class="hero-cta">
+          <a href="kehidupan-mahasiswa.html" class="btn-primary">
+            Jelajahi Kehidupan Kampus →
+          </a>
+          <a href="pmb.html" class="btn-secondary">
+            Daftar PMB 2026
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-card-stack">
+          <div class="hero-card hero-card-1">
+            <div class="hero-card-icon">📚</div>
+            <h4>4 Program Studi</h4>
+            <p>Sistem Informasi, Informatika, Teknik Sipil & Geodesi</p>
+          </div>
+          <div class="hero-card hero-card-2">
+            <div class="hero-card-icon">🕌</div>
+            <h4>Nilai Islami</h4>
+            <p>Berjiwa NU, berakhlak mulia & beriman</p>
+          </div>
+          <div class="hero-card hero-card-3">
+            <div class="hero-card-icon">🚀</div>
+            <h4>Teknologi & Sains</h4>
+            <p>SDM unggul siap menghadapi masa depan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== STATS ========== -->
+  <section class="stats-section">
+    <div class="stats-container reveal">
+      <div class="stat-item">
+        <div class="stat-number" data-target="200" data-suffix="+">0</div>
+        <div class="stat-label">Mahasiswa Aktif</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="4">0</div>
+        <div class="stat-label">Program Studi</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="22" data-suffix="+">0</div>
+        <div class="stat-label">Dosen Tetap</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" data-target="15" data-suffix="+">0</div>
+        <div class="stat-label">Prestasi & Event</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROGRAM STUDI ========== -->
+  <section class="section" id="prodi">
+    <div class="section-header reveal">
+      <span class="section-badge">Program Unggulan</span>
+      <h2 class="section-title">Empat Program Studi</h2>
+      <p class="section-desc">Membangun kompetensi teknologi & sains yang berlandaskan nilai-nilai Islami dan kebangsaan.</p>
+    </div>
+    
+    <div class="prodi-grid">
+      <article class="prodi-card reveal reveal-delay-1">
+        <div class="prodi-icon">💻</div>
+        <h3>Sistem Informasi</h3>
+        <p>Mengembangkan sistem informasi modern untuk mendukung transformasi digital organisasi dan masyarakat.</p>
+        <a href="program-studi.html#si" class="prodi-link">Pelajari lebih lanjut →</a>
+      </article>
+      
+      <article class="prodi-card reveal reveal-delay-2">
+        <div class="prodi-icon">🖥️</div>
+        <h3>Informatika</h3>
+        <p>Fokus pada pemrograman, kecerdasan buatan, dan rekayasa perangkat lunak untuk solusi inovatif.</p>
+        <a href="program-studi.html#if" class="prodi-link">Pelajari lebih lanjut →</a>
+      </article>
+      
+      <article class="prodi-card reveal reveal-delay-3">
+        <div class="prodi-icon">🏗️</div>
+        <h3>Teknik Sipil</h3>
+        <p>Membangun infrastruktur berkelanjutan yang aman, efisien, dan ramah lingkungan.</p>
+        <a href="program-studi.html#ts" class="prodi-link">Pelajari lebih lanjut →</a>
+      </article>
+      
+      <article class="prodi-card reveal reveal-delay-4">
+        <div class="prodi-icon">🌍</div>
+        <h3>Teknik Geodesi</h3>
+        <p>Menguasai ilmu pengukuran bumi, pemetaan, dan teknologi spasial untuk pembangunan wilayah.</p>
+        <a href="program-studi.html#tg" class="prodi-link">Pelajari lebih lanjut →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== KEHIDUPAN MAHASISWA PREVIEW ========== -->
+  <section class="section" style="background: var(--gray-50); border-radius: 0;">
+    <div class="section-header reveal">
+      <span class="section-badge">Student Life</span>
+      <h2 class="section-title">Kehidupan Mahasiswa yang Berwarna</h2>
+      <p class="section-desc">Dari ruang kelas hingga kegiatan keagamaan, organisasi, dan komunitas — setiap hari adalah kesempatan untuk tumbuh.</p>
+    </div>
+    
+    <div class="life-grid">
+      <a href="kehidupan-mahasiswa.html#organisasi" class="life-card reveal reveal-delay-1">
+        <div class="life-card-bg" style="background: linear-gradient(135deg, #0B3D2E, #145C45);"></div>
+        <div class="life-card-content">
+          <div class="life-card-icon">🏛️</div>
+          <h3>Organisasi & UKM</h3>
+          <p>BEM, HIMA, UKM olahraga, seni & keagamaan</p>
+        </div>
+      </a>
+      
+      <a href="kehidupan-mahasiswa.html#keagamaan" class="life-card reveal reveal-delay-2">
+        <div class="life-card-bg" style="background: linear-gradient(135deg, #0D9488, #0B3D2E);"></div>
+        <div class="life-card-content">
+          <div class="life-card-icon">🕌</div>
+          <h3>Kegiatan Keagamaan</h3>
+          <p>Pengajian, sholat berjamaah & kajian rutin</p>
+        </div>
+      </a>
+      
+      <a href="kehidupan-mahasiswa.html#fasilitas" class="life-card reveal reveal-delay-3">
+        <div class="life-card-bg" style="background: linear-gradient(135deg, #C9A227, #0B3D2E);"></div>
+        <div class="life-card-content">
+          <div class="life-card-icon">🏫</div>
+          <h3>Fasilitas Kampus</h3>
+          <p>Lab, perpustakaan, musholla & area hijau</p>
+        </div>
+      </a>
+    </div>
+    
+    <div class="text-center mt-4" style="margin-top: 2.5rem;">
+      <a href="kehidupan-mahasiswa.html" class="btn-primary">Lihat Semua Aspek Kehidupan →</a>
+    </div>
+  </section>
+
+  <!-- ========== TESTIMONI ========== -->
+  <section class="section">
+    <div class="section-header reveal">
+      <span class="section-badge">Suara Mahasiswa</span>
+      <h2 class="section-title">Apa Kata Mereka?</h2>
+      <p class="section-desc">Pengalaman nyata dari mahasiswa ITS NU Sriwijaya tentang kehidupan kampus.</p>
+    </div>
+    
+    <div class="testimoni-slider reveal">
+      <div class="testimoni-track">
+        <div class="testimoni-card">
+          <p class="testimoni-quote">"ITS NU Sriwijaya memiliki kurikulum yang relevan dengan kemajuan teknologi saat ini dan didukung oleh pakar akademisi dan praktisi yang ahli di bidangnya."</p>
+          <div class="testimoni-author">
+            <div class="testimoni-avatar">MR</div>
+            <div>
+              <div class="testimoni-name">Muhammad Ramadani</div>
+              <div class="testimoni-role">Mahasiswa Sistem Informasi</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimoni-card">
+          <p class="testimoni-quote">"Dosen-dosen seru dan asik, perkuliahan tidak membosankan. Memberikan analogi yang mudah dipahami, dan tentunya banyak dapat teman dari luar daerah."</p>
+          <div class="testimoni-author">
+            <div class="testimoni-avatar">RA</div>
+            <div>
+              <div class="testimoni-name">RA Alya Adhystie</div>
+              <div class="testimoni-role">Mahasiswi Sistem Informasi</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimoni-card">
+          <p class="testimoni-quote">"Saya banyak mendapat ilmu mengenai creative & critical thinking. Fasilitas lengkap dan lingkungan yang mendukung proses belajar."</p>
+          <div class="testimoni-author">
+            <div class="testimoni-avatar">WW</div>
+            <div>
+              <div class="testimoni-name">Wildan Widodo</div>
+              <div class="testimoni-role">Mahasiswa Informatika</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimoni-card">
+          <p class="testimoni-quote">"Pembelajaran dari level dasar membuat mahasiswa mengerti konsep hingga level advance untuk aplikasi dunia kerja."</p>
+          <div class="testimoni-author">
+            <div class="testimoni-avatar">AH</div>
+            <div>
+              <div class="testimoni-name">Alya Hikmah Wardhani</div>
+              <div class="testimoni-role">Mahasiswi Informatika</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="display:flex;justify-content:center;gap:1rem;margin-top:2rem;">
+        <button class="slider-prev btn-secondary" style="padding:0.6rem 1.2rem;color:var(--text);border-color:var(--border);" aria-label="Previous">←</button>
+        <button class="slider-next btn-secondary" style="padding:0.6rem 1.2rem;color:var(--text);border-color:var(--border);" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA PMB ========== -->
+  <div class="cta-banner reveal">
+    <h2>Siap Menjadi Bagian dari ITS NU Sriwijaya?</h2>
+    <p>Pendaftaran Mahasiswa Baru Tahun Akademik 2026/2027 telah dibuka. Bergabunglah dengan komunitas mahasiswa yang berjiwa Islami dan unggul di bidang teknologi.</p>
+    <a href="pmb.html" class="btn-primary" style="position:relative;">Daftar Sekarang →</a>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>ITS NU Sriwijaya</h3>
+        <p>Institut Teknologi dan Sains Nahdlatul Ulama Sriwijaya Sumatera Selatan. Mencetak SDM unggul, berjiwa Islami, berakhlak mulia, dan kompeten di bidang teknologi & sains.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="YouTube">▶️</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="kehidupan-mahasiswa.html">Kehidupan Mahasiswa</a></li>
+          <li><a href="program-studi.html">Program Studi</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="pmb.html">PMB 2026</a></li>
+          <li><a href="berita.html">Berita & Blog</a></li>
+          <li><a href="tentang.html">Tentang Kami</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="https://www.itsnusriwijaya.ac.id" target="_blank" rel="noopener">Website Resmi</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h4>Kontak</h4>
+        <ul>
+          <li>📍 Jl. Talang Kerangga No.411<br>Kel. 30 Ilir, Kec. Ilir Barat II<br>Palembang, Sumsel 30129</li>
+          <li>📞 +62 813-1211-1599</li>
+          <li>✉️ info@itsnusriwijaya.ac.id</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <span>© 2026 ITS NU Sriwijaya Sumsel. All rights reserved.</span>
+      <span>Student Life Portal • Dibuat dengan ❤️ untuk mahasiswa</span>
+    </div>
+  </footer>
+
+  <!-- Install App Button (muncul di Android Chrome) -->
+  <button id="install-app-btn" aria-label="Install aplikasi" style="
+    display: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    padding: 14px 22px;
+    background: linear-gradient(135deg, #C9A227, #E0C04A);
+    color: #0B3D2E;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(201,162,39,0.45);
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    font-family: inherit;
+  ">
+    📲 Install Aplikasi
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

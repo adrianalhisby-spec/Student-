@@ -1,0 +1,13 @@
+{
+  "name": "its-nu-sriwijaya-student-life",
+  "version": "1.0.0",
+  "description": "Portal Kehidupan Mahasiswa ITS NU Sriwijaya - Modern Student Life Website",
+  "scripts": {
+    "start": "npx serve . -p 3000",
+    "dev": "npx serve . -p 3000",
+    "preview": "npx serve ."
+  },
+  "keywords": ["its-nu-sriwijaya", "student-life", "kampus", "palembang"],
+  "author": "ITS NU Sriwijaya",
+  "license": "MIT"
+}

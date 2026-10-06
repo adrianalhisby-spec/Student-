@@ -1,0 +1,55 @@
+{
+  "name": "ITS NU Sriwijaya - Student Life",
+  "short_name": "ITS NU Life",
+  "description": "Portal Kehidupan Mahasiswa Institut Teknologi dan Sains Nahdlatul Ulama Sriwijaya Sumatera Selatan",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0B3D2E",
+  "theme_color": "#0B3D2E",
+  "orientation": "portrait-primary",
+  "lang": "id",
+  "categories": ["education", "lifestyle"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Kehidupan Mahasiswa",
+      "short_name": "Student Life",
+      "description": "Lihat kehidupan kampus",
+      "url": "/kehidupan-mahasiswa.html",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "PMB 2026",
+      "short_name": "PMB",
+      "description": "Pendaftaran Mahasiswa Baru",
+      "url": "/pmb.html",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
